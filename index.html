@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shraddha Trikuta Beverages</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {margin:0;font-family:Arial;}
+
+header {background:#0077b6;color:white;text-align:center;padding:15px;}
+nav {background:#023e8a;text-align:center;padding:10px;}
+nav a {color:white;margin:10px;text-decoration:none;}
+
+.hero {
+background:url('https://images.unsplash.com/photo-1564419320461-6870880221ad') no-repeat center;
+background-size:cover;
+color:white;
+text-align:center;
+padding:90px 20px;
+}
+
+.section {padding:40px;text-align:center;}
+
+.services {display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+
+.box {
+background:#f1f1f1;
+padding:20px;
+width:250px;
+border-radius:10px;
+}
+
+input, textarea {
+width:80%;
+padding:10px;
+margin:10px;
+}
+
+button {
+background:green;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:5px;
+}
+
+footer {
+background:#03045e;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+
+<script>
+function sendToWhatsApp(){
+  var name = document.getElementById("name").value;
+  var address = document.getElementById("address").value;
+  var order = document.getElementById("order").value;
+
+  var url = "https://wa.me/917051690910?text="
+  + "Name: " + name + "%0a"
+  + "Address: " + address + "%0a"
+  + "Order: " + order;
+
+  window.open(url, '_blank');
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Shraddha Trikuta Beverages</h1>
+<p>Pure & Safe Drinking Water</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#price">Price</a>
+<a href="#order">Order</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h1>100% Pure RO Water</h1>
+<p>Fast Home Delivery in Katra</p>
+</section>
+
+<section id="services" class="section">
+<h2>Our Services</h2>
+
+<div class="services">
+<div class="box">
+<h3>20L Water Jar</h3>
+<p>Home delivery available</p>
+</div>
+
+<div class="box">
+<h3>1L Bottles</h3>
+<p>Retail & bulk supply</p>
+</div>
+
+<div class="box">
+<h3>Bulk Orders</h3>
+<p>Events & marriage supply</p>
+</div>
+</div>
+</section>
+
+<section id="price" class="section">
+<h2>Price List</h2>
+<p>20L Jar – ₹40</p>
+<p>1L Bottle – ₹10</p>
+</section>
+
+<section id="order" class="section">
+<h2>Place Your Order</h2>
+
+<input type="text" id="name" placeholder="Your Name"><br>
+<input type="text" id="address" placeholder="Your Address"><br>
+<textarea id="order" placeholder="Your Order (e.g. 2 Jar)"></textarea><br>
+
+<button onclick="sendToWhatsApp()">Order on WhatsApp</button>
+
+</section>
+
+<section id="contact" class="section">
+<h2>Contact Us</h2>
+<p>📞 7051690910</p>
+<p>📍 Katra</p>
+
+<iframe src="https://maps.google.com/maps?q=katra&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="90%" height="300"></iframe>
+
+</section>
+
+<footer>
+<p>© 2026 Shraddha Trikuta Beverages</p>
+</footer>
+
+</body>
+</html>
